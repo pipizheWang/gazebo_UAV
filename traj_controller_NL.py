@@ -191,7 +191,7 @@ class TrajController(Node):
         # 计算期望力
         F_sp = self.calculate_desired_force(
             pose, velo, traj_p, traj_v, traj_a, sliding_gain, tracking_gain)
-        # print('F_sp=', F_sp)
+        print('F_sp=', F_sp)
 
         # 计算期望姿态和推力
         attitude_target = self.calculate_attitude_from_force(F_sp, body_z, traj_yaw)
