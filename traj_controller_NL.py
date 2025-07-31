@@ -187,7 +187,6 @@ class TrajController(Node):
 
         # 获取当前状态
         pose, velo, rotation_matrix, body_z = self.get_current_state()
-        # print('p=', pose)
 
         # 计算期望力
         F_sp = self.calculate_desired_force(
