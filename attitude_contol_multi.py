@@ -61,6 +61,7 @@ class AttitudeController(Node):
 
         # 控制频率
         self.Rate = 200.0
+        # self.Rate = 100.0
 
         # 初始化状态变量
         self.current_pa = None
